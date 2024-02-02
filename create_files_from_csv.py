@@ -5,7 +5,10 @@ csv_file_path = 'Enhanced_Business_Documents_Filenames.csv'  # Replace with the 
 
 # Directory to store the new files
 output_directory = './files'  # Replace with your desired directory path
+
+#Create a directory named output_directory, and ignore any errors if the directory already exists
 os.makedirs(output_directory, exist_ok=True)
+
 #Create a list to store the filenames
 filenames = []
 # Read the CSV file and extract filenames
